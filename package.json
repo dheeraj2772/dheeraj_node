@@ -1,0 +1,16 @@
+{
+  "name": "dheeraj_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"node index.js",
+    "start": "node index.js"
+  },
+  "author": "Dheeraj",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.5.0"
+  }
+}

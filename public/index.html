@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheeraj Tatineni Portfolio</title>
+</head>
+<body>
+    <div class="maincontainer">
+        <nav class="nav">
+            <a class="menubar" href="#abt">About</a>
+            <a class="menubar" href="#edu">Education</a>
+            <a class="menubar" href="#exp">Experience</a>
+            <a class="menubar" href="#proj">Projects</a>
+            <a class="menubar" href="#skills">Skills</a>
+            <a class="menubar" href="#blogs">Blogs</a>
+            <a class="menubar" href="#footer">Footer</a>
+        </nav>
+        <div class="c1" id="imag">
+            <img class="image" src="dheeraj.png" alt="Dheeraj">
+        </div>
+        <div class="c1" id="abt">
+            <h1 class="heading">About</h1>
+            <p class="text">My name is Dheeraj Tatineni. I am currently studying Master's in Computer Science at University of New
+                Haven.
+                I want to become a Data Engineer.
+            </p>
+        </div>
+        <div class="c1" id="edu">
+            <h1 class="heading">Education</h1>
+            <p class="text">
+            <ul>
+                <li> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium sed adipisci debitis, sit nisi
+                    suscipit incidunt cumque quo architecto magni magnam.</li><br>
+                <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolor et vero rem, aut ab dolore
+                    aperiam debitis minima a ullam vitae ex sint facere.</li><br>
+            </ul>
+            </p>
+        </div>
+        <div class="c2" id="exp">
+            <h1 class="heading">Experience</h1>
+            <p class="text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio consectetur sed itaque architecto
+                repudiandae, facilis blanditiis et sequi nesciunt repellat,
+                inventore nisi ullam quidem in labore quibusdam ab, est eligendi.
+            </p>
+        </div>
+        <div class="c2" id="proj">
+            <h1 class="heading">Projects</h1>
+            <p class="text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos omnis accusamus pariatur ullam excepturi,
+                aspernatur maxime fuga consequatur incidunt itaque beatae ea sint assumenda, tempore qui.
+                Repellat necessitatibus at adipisci!
+        </div>
+        <div class="c3" id="skills">
+            <h1 class="heading">Skills</h1>
+            <p class="text">
+            <ol>
+                <li>Python</li><br>
+                <li>Machine Learning</li><br>
+                <li>SQL</li><br>
+                <li>AWS</li><br>
+                <li>Data Structures</li>
+            </ol>
+            </p>
+        </div>
+        <div class="c3" id="blogs">
+            <h1 class="heading">Blogs</h1>
+            <p class="text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa cupiditate labore magni maxime possimus
+                beatae, provident quaerat culpa facere ipsam quo dolor necessitatibus reiciendis eveniet harum vel natus
+                delectus mollitia!
+            </p>
+        </div>
+        <div class="c4" id="footer">
+            <h1 class="heading">Footer</h1>
+            <p class="text">
+            <ul>
+                <li>LinkedIn: <a href="www.linkedin.com">www.linkedin.com</a></li>
+                <li>Twitter: <a href="www.twitter.com">www.twitter.com</a></li>
+                <li>Gmail: <a href="www.gmail.com">www.gmail.com</a></li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <style>
+       :root {
+            --main-radius: 5px;
+            --main-padding: 5px;
+        }
+
+        .maincontainer {
+            background-color: aliceblue;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+            grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.5fr;
+            grid-gap: 0.2rem;
+            grid-template-areas:
+                "nav nav nav nav"
+                "imag abt edu edu"
+                "exp exp proj proj"
+                "skills skills blogs blogs"
+                "footer footer footer footer"
+            ;
+        }
+
+        .nav {
+            background-color: cyan;
+            grid-area: nav;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        .menubar{
+            margin: 0 10px;
+            padding: 0 10px;
+            padding-top: 10px;
+        }
+
+        #imag {
+            grid-area: imag;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+            font-weight: 200;
+            font-family: 'Times New Roman';
+
+        }
+
+        .image {
+            width: 100px;
+            height: 200px;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        #abt {
+            grid-area: abt;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            font-size: medium;
+            font-weight: 200;
+            font-family: 'Times New Roman';
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        .menubar {
+            text-decoration: none;
+            color: black;
+            font-size: large;
+        }
+
+        #exp {
+            grid-area: exp;
+            background-color: lightgoldenrodyellow;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+            font-size: medium;
+            font-weight: 200;
+            font-family: 'Times New Roman';
+        }
+
+        #edu {
+            grid-area: edu;
+            background-color: lightblue;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+            font-size: medium;
+            font-weight: 200;
+            font-family: 'Times New Roman';
+        }
+
+        #skills {
+            grid-area: skills;
+            background-color: blanchedalmond;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+            font-size: medium;
+            font-weight: 200;
+            font-family: 'Times New Roman';
+        }
+
+        #proj {
+            grid-area: proj;
+            background-color: gainsboro;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+            font-size: medium;
+            font-weight: 200;
+            font-family: 'Times New Roman';
+        }
+
+        #blogs {
+            grid-area: blogs;
+            background-color: lightpink;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+            font-size: medium;
+            font-weight: 200;
+            font-family: 'Times New Roman';
+        }
+
+        #footer {
+            grid-area: footer;
+            background-color: aliceblue;
+            font-size: medium;
+            font-weight: 400;
+            font-family: 'Times New Roman';
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        .text {
+            text-align: start;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+
+       .heading {
+            text-align: left;
+            color: red;
+        }
+
+        @media only screen and (max-width:500px) {
+            .maincontainer {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "nav"
+                    "imag"
+                    "abt"
+                    "edu"
+                    "exp"
+                    "proj"
+                    "skills"
+                    "blogs"
+                    "footer"
+                ;
+            }
+
+            .nav {
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .maincontainer {
+                width: fit-content;
+            }
+
+            #imag,
+            #abt {
+                width: 100%;
+                text-align: center;
+            }
+            
+            #exp,
+            #edu,
+            #proj,
+            #blogs {
+                width: fit-content;
+                height: fit-content;
+            }
+
+            #skills {
+                width: auto;
+                background-color: skyblue;
+            }
+        }
+    </style>
+</body>
+</html>
